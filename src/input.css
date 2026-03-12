@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+    --color-primary: #c1d7c2;
+    --color-secondary: #eeacb9;
+    --color-accent: #d3b7a7;
+    --color-neutral-dark: #865939;
+    --color-background-light: #fdfaf7;
+    --color-background-dark: #171b17;
+
+    --font-display: "Manrope", sans-serif;
+    --font-serif: "Playfair Display", serif;
+
+    --radius: 1rem;
+    --radius-lg: 1.5rem;
+    --radius-xl: 2.5rem;
+    --radius-full: 9999px;
+}
+
+@utility glass-card {
+    @apply backdrop-blur-md bg-white/70 dark:bg-slate-900/80;
+}
+
+@utility organic-shape {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+}
